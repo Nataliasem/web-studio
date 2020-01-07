@@ -1,0 +1,1062 @@
+body {
+    min-width: 320px;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+h3 {
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 50px;
+    line-height: 52px;
+}
+
+
+h4 {
+    font-style: italic;
+    font-size: 42px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+/*===========================кнопка скролла наверх=================================*/
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    z-index: 20;
+    color: #fff;
+    transition: all .5s;
+    background-color: #da1757;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.scroll-to-top:hover {
+    background-color: #763390;
+    text-decoration: none;
+    outline: none;
+}
+
+/*===========================хедер-меню=================================*/
+
+.main-header {
+    position: relative;
+    background: url("../img/bg-first.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    padding: 30px 50px 0 50px;
+}
+
+
+/*стили для меню страницы блога*/
+
+.header-blog {
+    background-image: none;
+    background-color: #4b2d7f;
+    min-height: auto;
+    padding-bottom: 30px;
+}
+
+
+.main-header .navbar-toggler {
+    color: #fff;
+}
+
+.main-header .navbar-brand,
+.main-header ul li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-header .navbar-brand {
+    font-size: 42px;
+}
+
+.main-header ul li a {
+    font-size: 17px;
+}
+
+.main-header ul li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.main-header ul li a:hover::after {
+    transform: scale(1);
+}
+
+
+/*===========================хедер-текст с кнопками и картинка=================================*/
+
+.main-header-text {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    min-width: 896px;
+    color: #fff;
+    padding-right: 50px;
+    z-index: 11;
+}
+
+.main-header-text h4 {
+    font-size: 40px;
+}
+
+.main-header-text h3 {
+    font-size: 60px;
+    line-height: 67px;
+}
+
+.main-header-text p {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+
+.header-image {
+    position: absolute;
+    right: 70px;
+    bottom: 0;
+}
+
+
+.main-header-buttons {
+    padding-left: 30px;
+
+}
+
+.main-header-buttons .btn {
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+    opacity: .8;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+    transition: all .5s;
+}
+
+.main-header-buttons .btn:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-pink {
+    background-color: #f42267;
+}
+
+.btn-violet {
+    background-color: #763390;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/*===========================второй экран с часами =================================*/
+
+.section-watch {
+    background: url("../img/map.png") center no-repeat;
+    background-size: cover;
+}
+
+.section-watch h4 {
+    font-size: 33px;
+}
+
+.section-watch h4,
+.section-watch h3 {
+    color: #484848;
+}
+
+.section-tabs .nav-pills {
+    margin-bottom: 27px;
+}
+
+
+.section-tabs .nav-pills .nav-link {
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: 600;
+    color: #484848;
+    padding: 14px 30px;
+}
+
+.section-tabs .nav-pills .nav-item .nav-link.active {
+    background-color: #f42267;
+    border-radius: 62px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+    color: #fff;
+}
+
+
+.btn-shadow {
+    box-shadow: 0 10px 0 #ff5990;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: all .5s;
+}
+
+.btn-shadow:hover {
+    box-shadow: 0 5px 0 #ff5990;
+    color: #fff;
+    background-color: #db3b70;
+}
+
+
+/*===========================блок с цифрами о компании =================================*/
+
+.section-progress {
+    background-color: #4b2d7f;
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+}
+
+.section-progress .num {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+
+.section-progress h3 {
+    font-size: 30px;
+    font-weight: 600;
+    height: 72px;
+    line-height: 32px;
+}
+
+
+.section-progress h3 span {
+    font-size: 25px;
+}
+
+
+.section-progress p {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+.section-progress .progress-item {
+    padding-top: 86px;
+    padding-bottom: 104px;
+    transition: all .5s;
+}
+
+
+.section-progress .progress-item:hover {
+    background-color: #40286a;
+}
+
+
+/*===========================блок с призывом let`s grow=================================*/
+.slogan {
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url("../img/slogan-bg.jpg") center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.slogan p {
+    margin-bottom: 50px;
+}
+
+
+/*===========================блок с видео=================================*/
+
+.video h4 {
+    font-size: 33px;
+    color: #484848;
+    margin-bottom: 10px;
+
+}
+
+.video h3 {
+    font-size: 45px;
+    color: #484848;
+    margin-bottom: 28px;
+}
+
+.video .container {
+    padding: 0;
+}
+
+.video h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    color: #484848;
+}
+
+
+.video p {
+    margin-bottom: 60px;
+}
+
+.video .item p {
+    margin-bottom: 48px;
+}
+
+.video .item img {
+    margin-bottom: 15px;
+}
+
+
+.embed-responsive {
+    padding-top: 50px;
+    position: relative;
+    border-radius: 15px;
+}
+
+#videoPlayBtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    cursor: pointer;
+    background: url("../img/play-btn.png") center no-repeat;
+}
+
+
+/*===========================блок с портфолио=================================*/
+
+.section-work {
+    background-color: #f1f1f1;
+    color: #333333;
+    padding-top: 78px;
+    padding-bottom: 0;
+}
+
+.section-work h3 {
+    color: #333333;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+.section-work p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 51px;
+}
+
+
+.section-work .col-md-8 {
+    margin-bottom: 75px;
+}
+
+.section-work .nav-pills {
+    margin-bottom: 0;
+}
+
+.section-work .btn-shadow {
+    margin-top: 97px;
+    margin-bottom: 115px;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+}
+
+.gallery a img {
+    transition: all .5s;
+}
+
+.gallery a:hover img {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+/*===========================блок с логотипами клиентов=================================*/
+
+.clients {
+    background-color: #4b2d7f;
+    padding: 113px;
+}
+
+
+/*===========================блок отзывами=================================*/
+
+.section-reviews {
+    background: url("../img/review-bg-bg.jpg") center no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.section-reviews .carousel-caption {
+    top: 5%;
+    bottom: auto;
+    text-align: left;
+}
+
+.section-reviews .blockquote {
+    position: relative;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 300;
+    padding-left: 50px;
+    margin-top: 60px;
+}
+
+.section-reviews .blockquote::before {
+    content: "\201C";
+    float: left;
+    font-size: 200px;
+    font-weight: 300;
+    font-style: italic;
+    color: #f42267;
+    position: absolute;
+    top: 39px;
+    left: -38px;
+}
+
+.section-reviews .blockquote-footer {
+    position: relative;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+.section-reviews .blockquote-footer::before {
+    position: absolute;
+    content: " \1F7CA\1F7CA\1F7CA\1F7CA\1F7CA ";
+    color: #f42267;
+    font-size: 30px;
+    top: -40px;
+    left: -4px;
+}
+
+
+/*===========================секция с формой заявки=================================*/
+
+.section-form {
+    background: url("../img/form-bg.jpg") center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-form h3 {
+    font-size: 50px;
+    margin-bottom: 17px;
+}
+
+.section-form h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.section-form h5 {
+    font-size: 30px;
+}
+
+.section-form p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.section-form form {
+    margin-top: 60px;
+}
+
+
+.section-form .form-control {
+    background-color: rgba(255, 255, 255, .45);
+    border: none;
+    border-radius: 8px;
+    min-height: 57px;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-bottom: 20px;
+}
+
+.section-form .form-control::placeholder {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section-form .form-control:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+
+.section-form .btn-shadow-violet {
+    background-color: #4b2d7f;
+    box-shadow: 0 7px #a57ee9;
+    border-radius: 8px;
+    padding: 8px 40px;
+    min-height: 53px;
+    transition: all .3s;
+    border: none;
+}
+
+.section-form .btn-shadow-violet:hover {
+    background-color: #3a2362;
+    color: #fff;
+    box-shadow: 0 5px #a57ee9;
+}
+
+
+/*===========================секция со ссылками на соцсети=================================*/
+
+.section-social {
+    background-color: #4b2d7f;
+}
+
+
+.section-social a {
+    position: relative;
+    font-size: 27px;
+    color: white;
+}
+
+.section-social p {
+    text-align: center;
+    font-size: 27px;
+    color: #7647c7;
+}
+
+
+.section-social a:hover {
+    text-decoration: none;
+    color: #f42267;
+}
+
+
+/*==============================футер=======================================================*/
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+    background: url("../img/map.png") center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.footer h5 {
+    font-size: 25px;
+    color: #4b2d7f;
+    font-weight: 700;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer ul li a {
+    font-size: 15px;
+    color: #171717;
+    font-weight: 700;
+}
+
+.footer-images img {
+    border-radius: 16px;
+    margin-bottom: 17px;
+}
+
+
+/*==============================копирайты=======================================================*/
+.copyright {
+    background-color: #f6f6f6;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright a,
+.copyright span {
+    position: relative;
+    font-size: 18px;
+    color: #171717;
+    font-weight: 400;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright a::after,
+.copyright span::after {
+    position: absolute;
+    content: "\00B7";
+    color: #171717;
+    right: -3px;
+}
+
+.copyright li:last-child a::after {
+    content: " ";
+}
+
+
+/*страница с несколькими статьями*/
+
+.section-content {
+    padding: 40px 0;
+}
+
+.article-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: all .5s;
+    margin-bottom: 30px;
+}
+
+.article-preview {
+    min-height: 415px;
+}
+
+
+.article-preview:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+
+.article-preview h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+
+.article-preview a {
+    color: #da1757;
+    transition: all .5s;
+}
+
+
+.article-preview a:hover {
+    color: #484848;
+    text-decoration: none;
+}
+
+
+.article-date {
+    color: #4b2d7f;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.preview-img {
+    float: left;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin: 0 20px 20px 0;
+}
+
+
+.article-preview .more {
+    color: #da1757;
+}
+
+.article-preview .more:hover {
+    text-decoration: underline;
+}
+
+
+.widget-title {
+    position: relative;
+    color: #484848;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    width: 110px;
+}
+
+.widget-title::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 30px;
+    left: 0;
+    top: 30px;
+    background-color: #da1757;
+    transition: all .7s;
+}
+
+.widget-title:hover::after {
+    width: 100%;
+}
+
+
+.widget-categories ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.widget-categories ul li::before {
+    content: "\2B9E";
+    color: #4b2d7f;
+}
+
+
+.widget-categories ul li a {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all .7s;
+    text-decoration: none;
+}
+
+.widget-categories ul li a:hover {
+    color: #da1757;
+    font-weight: 800;
+    padding-left: 20px;
+}
+
+
+.pagination .page-link {
+    color: #da1757;
+    transition: all .5s;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pagination .page-link:hover {
+    background-color: #da1757;
+    color: #fff;
+    border-color: #f42267;
+}
+
+.page-item.active .page-link {
+    background-color: #da1757;
+    border-color:  #da1757;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(218, 23, 87, .25);
+}
+
+/*===========================медиазапросы =================================*/
+
+
+/*адаптация первого экрана: размеры шрифта и взаимное расположение блоков на странице*/
+
+@media only screen and (max-width: 1350px) {
+
+    .main-header-text {
+        min-width: 643px;
+        left: 7%
+    }
+
+    .main-header-text h4 {
+        font-size: 30px;
+    }
+
+    .main-header-text h3 {
+        font-size: 50px;
+        line-height: 67px;
+    }
+
+    .main-header-text p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    .header-image {
+        right: 60px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+
+
+    .main-header-text h4 {
+        font-size: 28px;
+    }
+
+    .main-header-text h3 {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 25px;
+    }
+
+    .main-header-text p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    .header-image {
+        right: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) {
+
+    .main-header-text h4 {
+        font-size: 24px;
+    }
+
+    .main-header-text h3 {
+        font-size: 44px;
+        line-height: 54px;
+        margin-bottom: 20px;
+    }
+
+    .main-header-text p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+    .header-image {
+        right: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .navbar-nav {
+        background: linear-gradient(45deg, #ed1b34 0%, #442e81 100%);
+        position: relative;
+        z-index: 9;
+        padding: 0 15px;
+    }
+
+
+    .main-header-text {
+        left: 3%;
+        top: 261px;
+    }
+
+    .main-header-text {
+        min-width: 700px;
+    }
+
+    .main-header-text h4 {
+        font-size: 22px;
+    }
+
+    .main-header-text h3 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .main-header-text p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+    .header-image {
+        right: 20px;
+    }
+
+    .main-header-buttons .btn {
+        margin-top: 0;
+    }
+
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-reviews .carousel-caption h4 {
+        font-size: 38px;
+    }
+
+    .section-reviews .blockquote p {
+        font-size: 20px;
+    }
+
+    .section-social a {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .main-header-text {
+        background-color: rgba(0, 0, 0, .3);
+        left: 3%;
+        top: 261px;
+        padding: 0;
+        min-width: 636px;
+    }
+
+    .main-header-text h4 {
+        font-size: 20px;
+    }
+
+    .main-header-text h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .main-header-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .header-image {
+        right: 10px;
+    }
+
+    .section-progress .progress-item {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .section-reviews .carousel-caption h4 {
+        font-size: 28px;
+    }
+
+    .section-reviews .carousel-caption h3 {
+        font-size: 30px;
+        margin-bottom: -30px;
+    }
+
+    .section-reviews .blockquote p {
+        font-size: 16px;
+    }
+
+    .section-reviews .blockquote::before {
+        font-size: 180px;
+        top: 33px;
+        left: -33px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .preview-img {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .main-header-buttons .btn {
+        display: block;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+
+    .section-watch h4 {
+        font-size: 30px;
+    }
+
+    .section-watch h3 {
+        font-size: 34px;
+    }
+
+    .btn-shadow {
+        box-shadow: 0 5px 0 #ff5990;
+        padding: 10px 15px;
+    }
+
+    .video .col-lg-6 {
+        margin-left: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+
+    .section-reviews .carousel-caption {
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .section-watch .nav-pills .nav-link {
+        padding: 8px 16px;
+
+    }
+
+    .section-watch .nav-pills .nav-item {
+        width: 100%;
+    }
+
+    .section-watch h4 {
+        font-size: 24px;
+    }
+
+    .section-watch h3 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .section-watch .nav-pills {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .main-header .navbar-brand {
+        font-size: 30px;
+    }
+
+    .main-header-buttons .btn {
+        width: 100%;
+    }
+
+    .carousel-caption {
+        position: static;
+    }
+
+    .section-reviews .col-sm-5 img {
+        display: none;
+    }
+
+    .section-reviews .carousel-caption {
+        background: none;
+    }
+
+
+}
+
